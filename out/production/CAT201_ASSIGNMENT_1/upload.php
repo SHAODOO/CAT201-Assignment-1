@@ -22,14 +22,15 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\upload\upload.pdf")) {
-        echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-        $command = 'java -cp "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\PDFBox\pdfbox-app-2.0.24.jar;."';
-
-        //display the output from java program
-        $output = shell_exec($command);
-        echo $output;
+        echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded. ";
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
+}
+if ($uploadOk == 1){
+    $command = 'java -cp "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\PDFBox\pdfbox-app-2.0.24.jar;." ReadingText';
+    //display the output from java program
+    $output = shell_exec($command);
+    echo $output;
 }
 ?>
