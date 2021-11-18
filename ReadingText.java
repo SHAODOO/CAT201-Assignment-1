@@ -13,17 +13,17 @@ public class ReadingText {
 
         //Loading an existing document
         File file = new File("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\upload\\upload.pdf");
-        PDDocument document = PDDocument.load(file);
+        PDDocument pdfFile = PDDocument.load(file);
 
         //Instantiate PDFTextStripper class
         PDFTextStripper pdfStripper = new PDFTextStripper();
 
         //Retrieving text from PDF document
-        String text = pdfStripper.getText(document);
+        String text = pdfStripper.getText(pdfFile);
         //System.out.println(text);
 
         //Closing the document
-        document.close();
+        pdfFile.close();
 
         FileWriter convertedTxtFile = new FileWriter("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\download\\text.txt");
 
