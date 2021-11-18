@@ -1,6 +1,8 @@
+//Import Apache PDFBox external library
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 
+//Import Java library
 import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
@@ -10,7 +12,7 @@ public class ReadingText {
     public static void main(String args[]) throws IOException {
 
         //Loading an existing document
-        File file = new File("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\CAT201_2021-assignment1.pdf");
+        File file = new File("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\upload\\upload.pdf");
         PDDocument document = PDDocument.load(file);
 
         //Instantiate PDFTextStripper class
@@ -23,11 +25,11 @@ public class ReadingText {
         //Closing the document
         document.close();
 
-        FileWriter myWriter = new FileWriter("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\text.txt");
+        FileWriter convertedTxtFile = new FileWriter("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\download\\text.txt");
 
-        myWriter.write(text);
+        convertedTxtFile.write(text);
 
-        myWriter.close();
+        convertedTxtFile.close();
 
         System.out.println("File successfully converted to .txt file");
     }
