@@ -30,7 +30,5 @@ public class ReadingText {
         convertedTxtFile.write(text);
 
         convertedTxtFile.close();
-
-        System.out.println(text);
     }
 }

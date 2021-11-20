@@ -1,144 +1,27 @@
-Academic Session 2021/2022 (Sem I)  Page 1 
-CSE241/CMM341 FOUNDATIONS OF SOFTWARE ENGINEERING 
-  
-Tutorial 1 
-  
-Chapter 2: Software Processes 
-  
-PART 1: Software Process Models 
+7/5/2021 SMU-Pelajar
+https://campusonline-ver2.usm.my/v3/smup/edaftar/dftr 1/1
+UNIVERSITI SAINS MALAYSIA 
+SLIP PERMOHONAN KURSUS KOKURIKULUM 
+SEMESTER I, ACADEMIC SESSION 2021/2022
+Date :  05 Jul 2021
+Time :  09:13 am
+Name : LING SHAO DOO Matric No. : 153152
+NRIC No./ Passport : 010519130557 Year /Semester Registered : 01/201
+Programme : COMPUTER SCIENCE Units Exempted : 0
  
-1. Incremental software development could be very effectively used for customers who did not 
-have a clear idea about the systems needed for their operations. Discuss?   
+? Current Courses
+# Course Code Course Type Unit Group Method Date/Time
+1 WCC103 PAINTING U 1 WKOK 05 Jul 2021 09:13 am
+ * Kursus 1 sidang :  Unit dibahagi dua untuk pengiraan beban kerja (unit) sebenar.
+ ** Beban kerja (unit) sebenar = 0
  
-Question Analysis 
-• What is incremental software development? 
-• When should we use/not to use incremental software development? 
-• How can incremental software development help the customers who are unsure about the 
-system they need? 
+Jumlah unit yang didaftarkan :  1 unit
+Jumlah beban kerja (unit) sebenar : 1 unit
  
-Suggested Answers 
-• In incremental model, the features with highest priority will be developed in the first 
-increment/iteration. 
-• Then, it will be delivered to the customers to get the feedbacks. 
-• The customer can evaluate to see if it delivers what is required. If not, new functionality 
-will be included during next increment. 
-• The customers will have clearer idea about the system after several increments. 
-• The software will be evolving through several versions until required system has 
-developed. 
- 
- 
-PART 2: Process Activities (Software Specification) 
- 
-2. Suggest why it is important to make a distinction between developing the user requirements 
-and developing system requirements in the requirements engineering process. 
- 
-Question Analysis 
-• What are user requirements? 
-• What are system requirements? 
-• Compare both of it. 
- 
-Academic Session 2021/2022 (Sem I)  Page 2 
-Suggested Answers 
-• User requirements focus on problem domain, describe the system features from users’ 
-perspective. System requirements focus on solution domain, describe what a software 
-must do and the technical side of it. 
-• User requirements are written in plain and natural language. System requirements are 
-more detailed descriptions of the software system’s functions, services, and operational 
-constraints. that could be part of a contract. 
-• User requirements start with gathering information, identifying important aspects, and 
-understanding them. System Requirements can only be implemented after the user 
-requirements are understood and finalized. 
- 
-* To discover more details, feel free to read Chapter 4: Requirements engineering 
-(Page 101, Ian Sommerville, Software Engineering, 10th Edition, Pearson, 2016) 
- 
-PART 2: Process Activities (Software Validation) 
- 
-3. Explain why software testing should always be incremental, staged activity. Are 
-programmers the best people to test the programs that they have developed?  
- 
-Question Analysis 
-• What is software testing?  
-• Who performs software testing? 
-• Differentiate the roles of programmers & those who performs software testing. 
- 
-Suggested Answers 
-1. Software testing always in incremental 
-• Each program is tested for correct functionality.  
-• Complete program divided into small modules, tested individually. (Unit Testing)  
-• Then, whole system is tested with the programs tested above. (System Testing)  
-• Lastly, Beta version released and end user checks. (Customer Testing)  
- 
-2. Programmers are not the best persons to test software 
-• Hard to find own errors.  
-• Programmers have the best skills to develop but not to test. 
- 
-* To discover more details, feel free to read Chapter 8: Software testing 
-(Page 226, Ian Sommerville, Software Engineering, 10th Edition, Pearson, 2016) 
- 
-PART 3: Coping with change & Software Evolution 
-Academic Session 2021/2022 (Sem I)  Page 3 
- 
-4. Imagine that a government wants a software program that helps to keep track of the 
-utilization of the country’s vast mineral resources. Although the requirements put forward 
-by the government were not very clear, a software company was tasked with the 
-development of a prototype. The government found the prototype impressive, and asked it 
-be extended to be the actual system that would be used. Discuss the pros and cons of taking 
-this approach. 
- 
-Question Analysis 
-• What is prototyping? 
-• Pros & cons of prototyping. 
- 
-Suggested Answers 
-Pros:  
-• Allows changes to prototype  
-• Customer sees prototype and modifications made before design is created  
-• Better implementation  
-• Satisfied customer  
- 
-Cons:  
-• Additional cost for prototype creation  
-• Delays due to extra time creating prototypes 
- 
-* To discover more details, feel free to read Chapter 2.3.1 Prototyping 
-(Page 62, Ian Sommerville, Software Engineering, 10th Edition, Pearson, 2016) 
- 
-PART 3: Coping with change 
- 
-5. You have developed a prototype of a software system and your manager is very impressed 
-by it. She proposes that it should be put into use as a production system, with new features 
-added as required. This avoids the expense of system development and makes the systems 
-immediately useful. Write a short report for your manager explaining why prototype systems 
-should not normally be used as production systems. 
- 
-Question Analysis 
-• What is prototype and its purpose? 
-• What is a production system in software engineering? 
-• Why prototype systems should not be used as production systems? 
- 
-Suggested Answers 
-Academic Session 2021/2022 (Sem I)  Page 4 
-• A software prototype can be used in a software development process to help anticipate 
-changes that may be required. 
-• In the requirements engineering process, a prototype can help with the elicitation and 
-validation of system requirements. 
-• In the system design process, a prototype can be used to explore software solutions and 
-in the development of a user interface for the system. 
- 
-• Prototype systems should not be used as production systems because it may be 
-impossible to tune the system to meet non-functional requirements. 
-• Prototypes are normally undocumented. 
-• The prototype structure is usually degraded through rapid change. 
-• The prototype probably will not meet normal organizational quality standards. 
- 
-* To discover more details, feel free to read Chapter 4.1: Functional and non-functional 
-requirements 
-(Page 105, Ian Sommerville, Software Engineering, 10th Edition, Pearson, 2016) 
- 
- 
- 
- 
-  
-  
- 
+Dengan ini saya mengesahkan bahawa KOD, JENIS, NILAI UNIT DAN BEBAN UNIT SEBENAR di atas adalah BETUL.  Saya
+juga ingin mengesahkan bahawa butiran ejaan NAMA, NOMBOR KAD PENGENALAN dan  NOMBOR MATRIK saya telah
+disemak dan ianya adalah BETUL.
+_____________________ 
+TANDANGAN PELAJAR
+BAGI PELAJAR TAHUN AKHIR, SILA PASTIKAN KETEPATAN MAKLUMAT MAJOR, MINOR DAN ALAMAT TETAP ANDA DENGAN PIHAK
+UNIVERSITI.  TERIMA KASIH.

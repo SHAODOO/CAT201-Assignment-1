@@ -4,7 +4,7 @@
 $target_dir = "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\upload\ ";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 2000000) {
@@ -13,7 +13,7 @@ if ($_FILES["fileToUpload"]["size"] > 2000000) {
 }
 
 // Allow certain file formats
-if($imageFileType != "pdf") {
+if($fileType != "pdf") {
     echo "Sorry, only PDF file are allowed.";
     $uploadOk = 0;
 }
@@ -24,17 +24,14 @@ if ($uploadOk == 0) {
     include 'index.php';
 // if everything is ok, try to upload file
 } else {
+    //rename the file to upload.pdf
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\upload\upload.pdf")) {
         echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been successfully uploaded and converted. <br>";
+        include 'convert.php';
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-if ($uploadOk == 1){
-    $command = 'java -cp "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\PDFBox\pdfbox-app-2.0.24.jar;." ReadingText';
-    //display the output from java program
-    $output = shell_exec($command);
-    echo $output;
-    include 'download.php';
-}
 ?>
+</body>
+</html>
