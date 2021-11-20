@@ -31,6 +31,6 @@ public class ReadingText {
 
         convertedTxtFile.close();
 
-        //System.out.println("File successfully converted to .txt file");
+        System.out.println(text);
     }
 }
