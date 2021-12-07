@@ -1,52 +1,15 @@
-CMT221 LAB 4 
-NAME: LING SHAO DOO 
-MATRIC NO: 153152 
-TUTORIAL: S03 
- 
-Q1: What is the relationship between STUDENT, COURSE and STUDENT_COURSE tables? Explain. 
-One student can take many courses. 
-One course can taken by many students. 
-Therefore, it is many to many relationship. 
-STUDENT_COURSE is bridge entity between STUDENT and COURSE. 
- 
-2: Do the following two CREATE TABLE statements in A and B produce the same output in terms of  
-primary key creation? Yes or no? 
-Yes. A will come with constrain name that we defined but B come with random name. 
- 
-Q3: What is a .csv file? Explain it by giving an example. 
-.csv file stands for comma-seperate values is a text file that store a list of data. 
-For example, STUDENT.csv contains row (record) and column (attribute). 
- 
-Q4: Are you able to execute the above statement successfully? Highlight the error if you encounter  
-any. Provide reason why the error occurs and fix the error. Please include your discussion in the 
-lab report. 
-No. It shows SQL Error: ORA-00947: not enough values 
-00947. 00000 -  "not enough values". It less one attribute which is SCORE.  
-I include the SCORE in the parameters. 
-After I run the command again it still occurs error ORA-02291: integrity constraint 
-(SYSTEM.SC_COURSE_CODE_FK) violated - parent key not found 
-The parent key (CMM222) doesn't exist in COURSE table. I can add it to the parent table. 
- 
-Q5: Are you able to execute the above statement successfully? Highlight the error if you encounter  
-any. Provide reason why the error occurs and fix the error. Please include your discussion in the 
-lab report. 
-No. It shows ORA-00001: unique constraint (SYSTEM.STUDENT_PK) violated because 11128 already 
-exist in the table. 
-We can change with another unique primary key in order to insert to the table. 
- 
-Q6: Provide a SQL command which allows us to locate a student with STUDENT_ID = 11126. What 
-is  
-the student’s name? The SQL command must be included in the lab report. 
-SELECT STUDENT_NAME, STUDENT_ID FROM STUDENT WHERE STUDENT_ID = 11126 ; 
- 
-Q7: Examine the output of the following SQL statement: 
-SELECT *  
-FROM STUDENT 
-WHERE STUDENT_PHONE LIKE '%5_1%'; 
-Explain what the SQL statement does based on the output in your lab report. 
-It will sorts and displays row(s) that contain with one character between 5 and 1. 
- 
-Q8: Write a SELECT statement using aggregate function to return the number of students in the  
-STUDENT table. 
-SELECT COUNT(*) 
-FROM STUDENT; 
+CAT201 Integrated Software Development Workshop
+(Project Proposal)
+Name Matric no
+Ling Shao Doo 153152
+Khoo Ke Rou 153149
+Lim Phei San 152726
+Loh Zhi Xuan 152734
+Project Title: Expense Manager
+Description: Expense Manager is a mobile application that serves to
+assist users in managing their personal finances in order to be
+financially secure. Users will be able to keep track of all their
+income and expenses regardless of time and place. It helps users
+to manage their expenses in an easier and more organized way
+thus providing them a clearer picture of their spending habits and
+financial status.

@@ -8,19 +8,21 @@ $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 2000000) {
-    echo "Sorry, your file is too large.";
+    echo '<script>alert("Sorry, your file is too large.")</script>';
+    //echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
 
 // Allow certain file formats
 if($fileType != "pdf") {
-    echo "Sorry, only PDF file are allowed.";
+    echo '<script>alert("Sorry, only PDF file are allowed.")</script>';
+    //echo "Sorry, only PDF file are allowed.";
     $uploadOk = 0;
 }
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.<br>";
+    //echo "Sorry, your file was not uploaded.<br>";
     include 'index.php';
 // if everything is ok, try to upload file
 } else {
