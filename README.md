@@ -1,2 +1,3 @@
-# CAT201-Assignment-1
-This assignment evaluates a student ability in web platform development.
+# CAT201-Assignment-1 (PDF to Text Converted Web Application)
+Setup Apache webserver inside a Docker container. Create a web application 
+to allow users to convert a .pdf file to .txt file using Java PDFBox library. 
