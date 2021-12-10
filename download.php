@@ -1,6 +1,10 @@
+<html>
+<head>
+    <title>Pdf to Txt Converter</title>
+</head>
 <?php
 // Retrieve session variables that were set on previous page
-$convertedFileName = "Converted_" . $_SESSION["uploadFileName"] . ".txt";
+$convertedFileName = "Converted" . $_SESSION["uploadFileName"] . ".txt";
 
 //Display the button to let user download the converted text file
 echo '<a href="download/text.txt" download= "' . $convertedFileName . '" > <button>Click here to download</button> </a>';
@@ -15,3 +19,4 @@ session_unset();
 // Destroy the session
 session_destroy();
 ?>
+</html>

@@ -1,7 +1,12 @@
 <?php
 //Start the session to record PDF file name
 session_start();
-
+?>
+<html>
+<head>
+    <title>Pdf to Txt Converter</title>
+</head>
+<?php
 //Specific the directory where the file is going to be placed
 $target_dir = "C:\Users\User\OneDrive - Universiti Sains Malaysia\Laptop\CAT201_ASSIGNMENT_1\upload\ ";
 
@@ -12,7 +17,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $_SESSION["uploadFileName"] = basename($target_file, '.pdf');
 
 //flag
-$uploadOk = 1;
+$successUpload = 1;
 
 //Convert all characters to lowercase
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -21,18 +26,18 @@ $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 if ($_FILES["fileToUpload"]["size"] > 2000000) {
     echo '<script>alert("Sorry, your file is too large.")</script>';
     //echo "Sorry, your file is too large.";
-    $uploadOk = 0;
+    $successUpload = 0;
 }
 
 // Allow certain file formats
 if($fileType != "pdf") {
     echo '<script>alert("Sorry, only PDF file are allowed.")</script>';
     //echo "Sorry, only PDF file are allowed.";
-    $uploadOk = 0;
+    $successUpload = 0;
 }
 
 // Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
+if ($successUpload == 0) {
     //echo "Sorry, your file was not uploaded.<br>";
     include 'index.php';
 // If everything is ok, try to upload file
@@ -46,3 +51,4 @@ if ($uploadOk == 0) {
     }
 }
 ?>
+</html>
