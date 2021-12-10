@@ -1,15 +1,55 @@
-CAT201 Integrated Software Development Workshop
-(Project Proposal)
-Name Matric no
-Ling Shao Doo 153152
-Khoo Ke Rou 153149
-Lim Phei San 152726
-Loh Zhi Xuan 152734
-Project Title: Expense Manager
-Description: Expense Manager is a mobile application that serves to
-assist users in managing their personal finances in order to be
-financially secure. Users will be able to keep track of all their
-income and expenses regardless of time and place. It helps users
-to manage their expenses in an easier and more organized way
-thus providing them a clearer picture of their spending habits and
-financial status.
+CMT221 LAB 5 
+NAME: LING SHAO DOO 
+MATRIC NO: 153152 
+TUTORIAL: S03 
+ 
+Q1: Run the following SELECT statement can capture the screenshot displaying the output of the 
+query. Which SQL Workshop icon option is the most suitable to obtain a direct output of the 
+SELECT statement? 
+Screenshot 1 
+SQL command is the most suitable to obtain a direct output of the SELECT statement. 
+ 
+1. View the Course Addition page (Form type) and the Student Listing + Student Management 
+pages (Report with Form type) in runtime. List the differences in terms of data manipulation 
+operations you can perform using the two form types. 
+Course Addition page (Form type) only allow end user to input data to the database. 
+Student Listing + Student Management pages (Report with Form type) allow end user to view report 
+and input data to the database. 
+ 
+ 
+ 
+  
+2. Create a Student Course Registration form that users can check for the courses each student has 
+registered for all semesters. Use the Create Page Wizard to create a Master Detail page in which 
+Student will be the master table. When a student is selected, the detail form will display all the 
+attributes in STUDENT_COURSES for the selected student only. You can experiment with three 
+types of Master Detail: stacked, side-by-side and drill down. Capture the screenshots showing how 
+your Student Course Registration Master Detail page is created and note the differences between 
+the three types of Master Detail. 
+ 
+1. Input Page Name and Entity Name. 
+ 
+2. Tick Create a new navigation menu entry. 
+ 
+3. Input Master Region Title, Table/View Name and Primary Key Column. 
+ 
+4. Input Table/View Name, Primary Key Colum and Master Detail Foreign Key. 
+ 
+ 
+  
+stacked 
+ 
+When I tick at the leftmost column, the course(s) that been taken by that particular student will 
+display at the table below. 
+ 
+ 
+ 
+side-by-side 
+I have tried for many times but I still unable to create side-by-side Master Detail page. 
+ 
+drill down 
+ 
+ 
+There is small pencil icon at the leftmost column. When I clicked then it will display that particular 
+student’s information and course(s). 
+ 
