@@ -11,24 +11,26 @@ public class ReadingText {
 
     public static void main(String args[]) throws IOException {
 
-        //Loading an existing document
+        //Load the upload.pdf
         File file = new File("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\upload\\upload.pdf");
         PDDocument pdfFile = PDDocument.load(file);
 
         //Instantiate PDFTextStripper class
         PDFTextStripper pdfStripper = new PDFTextStripper();
 
-        //Retrieving text from PDF document
+        //Retrieving text from upload.pdf
         String text = pdfStripper.getText(pdfFile);
-        //System.out.println(text);
 
-        //Closing the document
+        //Close upload.pdf
         pdfFile.close();
 
+        //Load the text.txt
         FileWriter convertedTxtFile = new FileWriter("C:\\Users\\User\\OneDrive - Universiti Sains Malaysia\\Laptop\\CAT201_ASSIGNMENT_1\\download\\text.txt");
 
+        //Write the converted text to text.txt
         convertedTxtFile.write(text);
 
+        //Close text.txt
         convertedTxtFile.close();
     }
 }
