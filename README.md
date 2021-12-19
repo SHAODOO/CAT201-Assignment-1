@@ -5,7 +5,7 @@
 ## Table of content
 * [Description](#Description)
 * [Contribution](#Contribution)
-* [Installation & Setup](#Installation & Setup)
+* [Installation & Setup](#Installation&Setup)
 
 ## Description
 This project is to setup a Apache webserver inside a Docker container. Then, create a web application 
