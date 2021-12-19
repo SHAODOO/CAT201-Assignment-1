@@ -5,7 +5,7 @@
 ## Table of content
 * [Description](#Description)
 * [Contribution](#Contribution)
-* [Installation and Setup](#Installation & Setup)
+* [Installation & Setup](#Installation & Setup)
 
 ## Description
 This project is to setup a Apache webserver inside a Docker container. Then, create a web application 
@@ -35,7 +35,7 @@ Project is created with:
 9. Start Apache service
 10. Here you go
 
-### Window
+### Without Docker
 1. Download all files
 2. Open in any IDE (prefer Phpstorm)
 3. Modify the file path
