@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pdf to Txt Converter</title>
+    <title>PDF to Text Converter</title>
 </head>
 <body>
-<h1>Pdf to Txt Converter</h1>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    Select PDF to upload:<br>
-    <input type="file" name="fileToUpload" id="fileToUpload"><br>
-    <input type="submit" value="Upload PDF" name="submit">
-</form>
+
+<div class="header">
+    <h1 class="header layout">PDF to Text Converter</h1>
+</div>
+
+<p>Convert your PDF to text file in a matter of seconds!</p>
+<div class="container">
+    
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <br><br>Select PDF to upload:<br><br>
+        <link href="stylesheet.css" rel="stylesheet">  
+        <label for="fileToUpload"></label>
+        <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+        <input type="submit" value="Upload PDF" name="submit" class="button">
+    
+    </form>
+</div>
+
 </body>
 </html>
