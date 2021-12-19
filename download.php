@@ -23,10 +23,15 @@ session_destroy();
 ?>
 
 <body>
+    <div class="header">
+        <h1 class="header layout">PDF to Text Converter</h1>
+    </div>
+
     <!--Message to user that pdf has succesfully uploaded and converted-->
-    <p><?php echo $PdfFileName ?> has been successfully uploaded and converted. </p>
+    <p class="success"><?php echo $PdfFileName ?> has been successfully uploaded and converted. </p><br>
 
     <!--Display the button to let user download the converted text file-->
-    <a href="download/text.txt" download= "<?php echo $TxtFileName ?>" > <button>Click here to download</button> </a>
+    <link href="stylesheet.css" rel="stylesheet">
+    <span><a href="download/text.txt" download= "<?php echo $TxtFileName ?>"></a></span>
 </body>
 </html>
