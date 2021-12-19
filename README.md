@@ -5,14 +5,15 @@
 ## Table of content
 * [Description](#Description)
 * [Contribution](#Contribution)
-* [Installation & Setup]
+* [Installation and Setup](#Installation & Setup)
 
 ## Description
 This project is to setup a Apache webserver inside a Docker container. Then, create a web application 
 to allow users to convert a .pdf file to .txt file using Java PDFBox library. 
 
 ## Contribution
-
+Frontend: Khoo Ke Rou, Loh Zhi Xuan, Lim Phei San
+Backend: Ling Shao Doo
 
 ## Technologies
 Project is created with:
