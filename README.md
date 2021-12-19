@@ -5,6 +5,7 @@
 ## Table of content
 * [Description](#Description)
 * [Contribution](#Contribution)
+* [Contribution](#Contribution)
 * [Installation & Setup](#Installation&Setup)
 
 ## Description
