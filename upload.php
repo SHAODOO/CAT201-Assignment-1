@@ -26,7 +26,7 @@ $successUpload = 1;
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 2000000) {
+if ($_FILES['fileToUpload']['size'] > 2000000) {
     echo '<script>alert("Sorry, your file is too large.")</script>';
     $successUpload = 0;
 }
@@ -47,6 +47,7 @@ if ($successUpload == 0) {
         include 'convert.php';
     } else {
         echo '<script>alert("Sorry, there was an error uploading your file.")</script>';
+        include 'index.php';
     }
 }
 ?>
