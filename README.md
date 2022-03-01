@@ -26,7 +26,7 @@ Project is created with:
 ## Installation & Setup
 ### Docker
 1. Install Docker on your desktop
-2. Pull Ubuntu image
+2. Pull Ubuntu image (https://hub.docker.com/layers/183423165/keroukhoo/cat201-assignment1/1/images/sha256-5446e3d9ba4fecd145f02275985e3ce01fb413bc47a838ee2caea928577e83bb?context=repo)
 3. Create a Ubuntu container
 4. Open the container in Visual Studio Code (alternative)
 5. Install Php, Java and Apache
